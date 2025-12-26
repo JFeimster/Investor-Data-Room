@@ -1,0 +1,39 @@
+{
+  "slug": "acme-co",
+  "companyName": "Acme Co",
+  "tagline": "Industrial AI that cuts costs in real time.",
+  "oneLiner": "Acme turns messy ops data into margin. Real-time forecasting, automated procurement signals, and visibility investors can understand.",
+  "passwordSha256Hex": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "highlights": [
+    { "label": "Stage", "value": "Seed" },
+    { "label": "Revenue", "value": "$45k MRR" },
+    { "label": "Growth", "value": "12% MoM" },
+    { "label": "Raise", "value": "$1.5M" }
+  ],
+  "deck": {
+    "title": "Acme — Investor Deck (PDF)",
+    "href": "https://example.com/deck.pdf",
+    "note": "Latest version"
+  },
+  "financials": [
+    { "label": "P&L (Last 12 months)", "href": "https://example.com/pnl.pdf", "kind": "pdf" },
+    { "label": "Cash Flow Forecast", "href": "https://example.com/forecast.xlsx", "kind": "sheet", "note": "Monthly view" }
+  ],
+  "diligence": [
+    { "label": "Cap Table", "href": "https://example.com/cap-table.pdf", "kind": "pdf" },
+    { "label": "Security + Compliance Overview", "href": "https://example.com/security.pdf", "kind": "pdf" }
+  ],
+  "team": [
+    {
+      "name": "Jordan Lane",
+      "role": "CEO",
+      "bio": "Operator brain. Previously scaled supply chain analytics from 0→$8M ARR. Allergic to vanity metrics.",
+      "links": [{ "label": "LinkedIn", "href": "https://linkedin.com" }]
+    },
+    {
+      "name": "Sam Rivera",
+      "role": "CTO",
+      "bio": "Built data platforms that survived chaos at enterprise scale. Makes messy reality behave."
+    }
+  ]
+}
