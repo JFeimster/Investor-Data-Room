@@ -3,15 +3,23 @@ import { getRoom } from "@/lib/rooms";
 import RoomSection from "@/components/RoomSection";
 import StatPill from "@/components/StatPill";
 
-export default function RoomPage({ params }: { params: { slug: string } }) {
-  const room = getRoom(params.slug);
+export default async function RoomPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const room = getRoom(slug);
 
   if (!room) {
     return (
       <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-glow">
         <h1 className="text-2xl font-semibold">Room not found</h1>
         <p className="mt-2 text-white/65">That slug doesn’t exist in this template.</p>
-        <Link className="mt-6 inline-block rounded-2xl bg-white/10 px-5 py-3 ring-1 ring-white/15 hover:bg-white/15 transition" href="/">
+        <Link
+          className="mt-6 inline-block rounded-2xl bg-white/10 px-5 py-3 ring-1 ring-white/15 hover:bg-white/15 transition"
+          href="/"
+        >
           Back home
         </Link>
       </div>
@@ -64,13 +72,21 @@ export default function RoomPage({ params }: { params: { slug: string } }) {
       <RoomSection
         title="Financials"
         subtitle="Numbers investors actually care about."
-        items={room.financials.map((d) => ({ title: d.label, href: d.href, meta: d.note ?? d.kind.toUpperCase() }))}
+        items={room.financials.map((d) => ({
+          title: d.label,
+          href: d.href,
+          meta: d.note ?? d.kind.toUpperCase(),
+        }))}
       />
 
       <RoomSection
         title="Diligence"
         subtitle="Receipts. Legal. Product. Ops."
-        items={room.diligence.map((d) => ({ title: d.label, href: d.href, meta: d.note ?? d.kind.toUpperCase() }))}
+        items={room.diligence.map((d) => ({
+          title: d.label,
+          href: d.href,
+          meta: d.note ?? d.kind.toUpperCase(),
+        }))}
       />
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-glow">
@@ -93,6 +109,7 @@ export default function RoomPage({ params }: { params: { slug: string } }) {
                       className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/75 hover:bg-white/10 transition"
                       href={l.href}
                       target="_blank"
+                      rel="noreferrer"
                     >
                       {l.label}
                     </a>
