@@ -1,0 +1,26 @@
+{
+  "slug": "moonshine-labs",
+  "companyName": "Moonshine Labs",
+  "tagline": "FinOps + embedded funding infrastructure.",
+  "oneLiner": "A data room that feels like a product — because investors fund founders who build like adults.",
+  "passwordSha256Hex": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "highlights": [
+    { "label": "Category", "value": "Fintech / FinOps" },
+    { "label": "Model", "value": "SaaS-lite" },
+    { "label": "Moat", "value": "Workflow + distribution" }
+  ],
+  "financials": [
+    { "label": "Overview (Read Me)", "href": "https://example.com/overview.pdf", "kind": "pdf" }
+  ],
+  "diligence": [
+    { "label": "Product Notes", "href": "https://example.com/product.pdf", "kind": "pdf" }
+  ],
+  "team": [
+    {
+      "name": "Jason Feimster",
+      "role": "Founder",
+      "bio": "Combat vet turned builder. Designing infrastructure that turns founders into fundable machines.",
+      "links": [{ "label": "Website", "href": "https://www.distilledfunding.com/" }]
+    }
+  ]
+}
